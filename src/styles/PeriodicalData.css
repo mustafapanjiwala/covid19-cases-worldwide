@@ -1,0 +1,149 @@
+.periodicalData {
+  position: absolute;
+  top: 4vh;
+  right: 2vw;
+  width: 350px;
+  height: 45vh;
+  background-color: #fff;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 25px;
+  opacity: 0.95;
+}
+
+h2 {
+  text-align: center;
+  color: #ff5533;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+table {
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.fixed {
+  table-layout: fixed;
+}
+table.fixed td {
+  overflow: hidden;
+}
+
+td {
+  width: 100%;
+  border-collapse: collapse;
+  /* border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; */
+  overflow-wrap: break-word;
+}
+
+td:nth-child(1) {
+  max-width: 60%;
+}
+
+td:nth-child(2) {
+  max-width: 40%;
+}
+
+th {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h4 {
+  margin: 0;
+  text-align: left;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.overflowContainer {
+  max-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #555;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 2px;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+input {
+  width: 48%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #555;
+  font-size: 14px;
+  padding: 2px 5px;
+}
+
+.getResult {
+  width: 100%;
+  background-color: #ff5533;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
+  margin: 20px 0px;
+  float: left;
+}
+.CustomData {
+  background-color: #ff5533;
+}
+
+@media (max-width: 767px) {
+  .sideBar {
+    position: absolute;
+    top: 0vh;
+    left: 5%;
+    width: 80%;
+    height: 85vh;
+    border-radius: 0px 0px 7px 7px;
+  }
+
+  .collapse {
+    position: absolute;
+    top: 88.7vh;
+    left: 48%;
+    transform: rotate(90deg);
+  }
+
+  .expand {
+    position: absolute;
+    top: -2.5vh;
+    left: 48%;
+    transform: rotate(90deg);
+  }
+
+  img {
+    left: 15px;
+  }
+
+  .countryDataColumn {
+    max-height: 27%;
+  }
+}
