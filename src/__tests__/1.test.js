@@ -7,10 +7,5 @@ afterEach(cleanup);
 
 it("should have main  div", () => {
   const view = render(<App />);
-  //   fireEvent.click(getByTestId(1));
-  //   fireEvent.click(getByTestId(1));
-  //   fireEvent.click(getByTestId(1));
-  //   fireEvent.click(getByTestId(1));
   expect(view.getByTestId("main")).toBeInTheDocument();
-  //done
 });

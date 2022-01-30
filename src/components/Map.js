@@ -26,7 +26,6 @@ const DataFetching = () => {
           <PeriodicalData stats={data} />
         </div>
       ) : (
-        // "yo"
         <div
           style={{
             width: "100vw",
