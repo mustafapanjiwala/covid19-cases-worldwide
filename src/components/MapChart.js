@@ -50,7 +50,7 @@ const MapChart = ({ stats }) => {
                                         key={geo.rsmKey}
                                         geography={geo}
                                         onMouseEnter={() => {
-                                            console.log(d);
+                                            // console.log(d);
                                             setContent(drawerInfo(d));
                                         }}
                                         onMouseLeave={() => {
