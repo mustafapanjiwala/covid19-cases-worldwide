@@ -108,6 +108,7 @@ const PeriodicalData = (stats) => {
                             max={currentDate}
                             onChange={changeStartDate}
                             value={startDate}
+                            data-testid={'1'}
                             required
                         ></input>
                         <input
@@ -117,6 +118,7 @@ const PeriodicalData = (stats) => {
                             max={currentDate}
                             onChange={changeEndDate}
                             value={endDate}
+                            data-testid={'2'}
                         ></input>
                     </div>
                     <button

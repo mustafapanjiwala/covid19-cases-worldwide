@@ -77,7 +77,9 @@ const MapChart = ({ stats }) => {
                     </Geographies>
                 </ZoomableGroup>
             </ComposableMap>
-            <ReactTooltip type="dark">{content}</ReactTooltip>
+            <ReactTooltip type="dark" role="tooltip">
+                {content}
+            </ReactTooltip>
         </div>
     );
 };
