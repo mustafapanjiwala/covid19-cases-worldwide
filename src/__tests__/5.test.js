@@ -1,16 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import userEvent from '@testing-library/user-event';
 import App from '../App';
 
-test('tooltip data rendered or not', async () => {
-    render(<App />);
+test('Table data rendered or not', async () => {
+    const view = render(<App />);
     setTimeout(async () => {
         // waiting till document gets rendered with the data!
-
-        userEvent.mouseOver(await screen.findByRole('tooltip'));
-
-        expect(await screen.findByRole('tooltip')).toBeInTheDocument();
+        const td = view.container.querySelector('td');
+        expect(td).not.toBeNull();
     }, 3000);
     // expect(await getByTestId(/child element/i)).toBeInTheDocument();
 });
