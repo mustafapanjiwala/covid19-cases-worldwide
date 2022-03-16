@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import App from '../App';
 
-test('Table data rendered or not', async () => {
+test('Periodiacal Table data rendered or not', async () => {
     const view = render(<App />);
     setTimeout(async () => {
         // waiting till document gets rendered with the data!
