@@ -1,16 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import userEvent from '@testing-library/user-event';
-import App from '../App';
+import MapChart from '../components/MapChart';
 
 test('tooltip data rendered or not', async () => {
-    render(<App />);
-    setTimeout(async () => {
-        // waiting till document gets rendered with the data!
+    render(<MapChart />);
+    userEvent.mouseOver(await screen.findByRole('tooltip'));
 
-        userEvent.mouseOver(await screen.findByRole('tooltip'));
-
-        expect(await screen.findByRole('tooltip')).toBeInTheDocument();
-    }, 3000);
+    expect(await screen.findByRole('tooltip')).toBeInTheDocument();
     // expect(await getByTestId(/child element/i)).toBeInTheDocument();
 });
